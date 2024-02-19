@@ -1,0 +1,41 @@
+- name: Configure IPv4 policies.
+  fortios_firewall_policy:
+      host:  "{{ fortihost }}"
+      username: "{{ user }}"
+      password: "{{ passwordo }}"
+      vdom:  "root"
+      https: "True"
+      state: "present"
+      ssl_verify: "False"
+      firewall_policy:
+       action: "accept"
+       comments: "Ansible"
+       dstaddr:
+         -
+            name: "{{ dstaddrr }}"
+       dstintf:
+         -
+            name: "{{ dstintff }}"
+       label: "jin"
+       name: "{{ namee }}"
+       policyid: "0"
+       service:
+         -
+            name: "{{ servicee }}"
+       srcaddr: 
+         -
+            name: "{{ srcaddrr }}"
+
+       srcintf:
+         -
+            name: "{{ srcintff }}"
+       schedule: "always"
+       nat: "{{ natt }}"
+       logtraffic: "all"
+       ippool: "{{ poolstatus }}" 
+       poolname:
+         -
+            name: "{{ pooll }}"
+       groups:
+         -
+            name: "{{ groupp }}"

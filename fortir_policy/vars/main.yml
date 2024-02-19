@@ -1,0 +1,27 @@
+fortihost: !vault |
+           $ANSIBLE_VAULT;1.1;AES256
+           31326364663263376465613565363833333636613063623366306134613232636430663762613230
+           
+
+
+user:     !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          30393732633633633238373939383761636164323739636365303232353461303037303433626535
+         
+
+
+
+passwordo: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          33333131346131356462653961633034626432643466373231376339303434333565666430313633
+       
+namee: #
+srcintff: #
+dstintff: #
+srcaddrr: #
+dstaddrr: #
+servicee: #
+natt: #
+poolstatus: #
+pooll: #
+groupp: 
